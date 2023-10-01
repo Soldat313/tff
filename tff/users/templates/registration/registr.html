@@ -1,0 +1,9 @@
+{%extends 'main/base.html'%}
+{%block content%}
+<h1>Регистрация</h1>
+<form method="post">
+{{form}}
+{%csrf_token%}
+<button type="submit">Готова</button>
+</form>
+{%endblock%}

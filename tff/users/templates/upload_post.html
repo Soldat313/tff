@@ -1,0 +1,24 @@
+{%extends 'main/base.html'%}
+{%block content%}
+{% load widget_tweaks %}
+<form method="post" enctype="multipart/form-data">
+    
+    {%csrf_token%}
+    <h3>про себя {{form.text}}</h3>
+    
+    {{form.image}}
+    <br>
+    <br>
+    <br>
+    <select name="user_pop" required="" id="id_user_pop">
+        <option value="1">{{user}}</option>      
+      </select>
+    
+    <button type="submit">Submit</button>
+</form>
+
+{%if post_obj%}
+    <h2>Succesfully uplodet {{post_obj.title}}</h2>
+    <img src="{{post_obj.image.url}}" alt="concetct">
+{%endif%}
+{%endblock%}

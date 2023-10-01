@@ -1,0 +1,33 @@
+{%extends 'main/base.html'%}
+{%block content%}
+{%load static%}
+<main class="main">
+	<div class="container">
+		{%for data in data%}
+		<div class="carts">
+			<div class="cart">
+				<div class="photo">
+					<img src="/media/{{data.image}}" alt="">
+				</div>
+				<div class="text">
+					<h3>{{data.user_pop.username}}</h3>
+					<p>{{data.text}}</p>
+				</div>
+				<div class="comunications">
+					<div class="chat">
+						<a href="http://127.0.0.1:8000/chat/{{user}}">
+							<img src="{%static 'img/messenger.png'%}" alt="" width="30" height="30">
+						</a>
+					</div>
+					<div class="phone">	
+						<img src="{%static 'img/phone.png'%}" alt=""  width="30" height="30">
+					</div>
+				</div>
+			</div>
+		</div>
+		{%endfor%}
+		
+		</div>
+	</main>
+	<footer class="footer"></footer>
+{%endblock%}

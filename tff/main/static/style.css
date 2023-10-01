@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Rubik+Mono+One&display=swap');
+*{
+ 	padding:0;
+ 	margin:0;
+}
+li{
+	list-style-type: none;
+}
+
+
+
+.wrapper>.header{
+	display:flex;
+	background:#000;
+	color:#fff;
+	justify-content:space-around;
+	display: flex;
+	align-items: center;
+}
+
+.wrapper>.header>.logo > h1{
+    font-family: 'Nabla', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+.wrapper>.header>.logo > h1> a{
+	text-decoration: none;
+	color: #fff;
+}
+.wrapper>.header>.novigations{
+	margin-top: auto;
+}
+
+.wrapper>.header>.novigations>.header_link{
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 36px;
+	align-items: center;
+
+
+}
+.wrapper>.header>.novigations>.header_link>ul{
+	display: flex;
+	margin-top: 5px;
+}
+
+.wrapper>.header>.novigations>.header_link>ul>li{
+	margin: 32px 0 0 43px;
+
+}
+
+.wrapper>.header>.novigations>.header_link>ul>li>a{
+	text-decoration: none;
+	color:rgb(160, 160, 160);
+	transition: 1s;
+}
+
+.wrapper>.header>.novigations>.header_link>ul>li>a:hover{
+	text-decoration: underline;
+	color: #fff;
+	transition: 1s;
+}
+
+.wrapper>.main > .container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.wrapper>.main{
+	max-width: 1400px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 auto;
+}
+
+.wrapper>.main >.container>.carts{
+	margin-top: 10px;
+}
+
+.wrapper>.main >.container>.carts > .cart > .comunications{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 25px;
+  	margin-bottom: 10px;
+
+}
+.wrapper>.main >.carts > .cart > .comunications > .chat{
+	margin-right: 10px;
+	transition: 0.5s;
+}
+.wrapper>.main >.container >.carts > .cart > .text {
+	margin: 10px;
+}
+.wrapper>.main >.carts{
+	margin: 33px;
+}
+.wrapper>.main >.container>.carts > .cart > .comunications > .phone{
+	transition: 0.5s
+}
+.wrapper>.main >.container>.carts > .cart > .comunications > .phone:hover{
+	cursor: pointer;
+	opacity: 0.3;
+	transition: 0.5s;
+}
+.wrapper>.main >.container >.carts > .cart > .comunications > .chat{
+	margin-right: 10px;
+}
+.wrapper>.main >.container >.carts > .cart > .comunications > .chat:hover{
+	cursor: pointer;
+	opacity: 0.3;
+	transition: 0.5s;
+}
+#red-text:hover{
+	color: red;
+}
+.wrapper>.main >.container{
+	margin-top: 30px;
+}
+.wrapper>.main >.container>.carts > .cart{
+	max-width:500px;
+	border: 2px solid black;
+	border-radius: 27px;
+
+}
+.wrapper>.main >.container>.carts > .cart >.photo > img{
+	width:500px;
+	height:300px;
+	border-radius: 24px;
+}
+
+@media(max-width:1008px){
+	.wrapper>.main >.container>.carts > .cart{
+		width:400px;
+	}
+
+	.wrapper>.main >.container>.carts > .cart > .photo> img{
+		width:400px;
+	}
+}
+
+@media(max-width:802px){
+.wrapper>.main > .container{
+	display: flex;
+	flex-direction:column;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+}
+@media(max-width:406px){
+	.wrapper>.main >.container>.carts > .cart{
+		width:272px;
+	}
+
+	.wrapper>.main >.container>.carts > .cart > .photo> img{
+		width:272px;
+	}
+
+}
+@media(max-width:342px){
+.wrapper>.header>.novigations>.header_link>ul{
+	display: none;
+}	
+}
