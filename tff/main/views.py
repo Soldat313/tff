@@ -7,5 +7,3 @@ def index(request):
     data = Post.objects.all().select_related('user_pop')
     return render(request,'main/main.html' ,{"data":data})
 
-def asd(request):
-    return render(request,'main/er401.html')

@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/' , include('users.urls'), name='users'),
     path('main/' , include('main.urls'), name='main'),
+    path('' , TemplateView.as_view(template_name='main/er403.html'), name='er'),
     path('chat/<str:chat_box_name>/', chatbox , name='chat'),
 ]
 if settings.DEBUG:
