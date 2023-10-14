@@ -1,17 +1,27 @@
 {%extends 'main/base.html'%}
-{%block content%}
 {%load static%}
+{%block links%}
+<ul>
+	<li><a href="{%url 'registr'%}">Регистрация</a></li>
+	<li><a href="{%url 'login'%}">Вход</a></li>
+	<li><a href="{%url 'logout'%}">Выход</a></li>
+	<li><a href="{%url 'create_post'%}">Создать</a></li>
+</ul>
+{%endblock%}
+{%block content%}
 <main class="main">
 	<div class="container">
 		{%for data in data%}
+		
 		<div class="carts">
 			<div class="cart">
 				<div class="photo">
 					<img src="/media/{{data.image}}" alt="">
 				</div>
 				<div class="text">
-					<h3>{{data.user_pop.username}}</h3>
+					<h3>{{data.user_pop}}</h3>
 					<p>{{data.text}}</p>
+					<p>{{data.weight}}кг</p>
 				</div>
 				<div class="comunications">
 					<div class="chat">
@@ -25,8 +35,8 @@
 				</div>
 			</div>
 		</div>
-		{%endfor%}
 		
+		{%endfor%}
 		</div>
 	</main>
 	<footer class="footer"></footer>

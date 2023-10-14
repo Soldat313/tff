@@ -13,4 +13,4 @@ class UserCreationForm(UserCreationForm):
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('text' , 'image' , 'user_pop')
+        fields = ('id' , 'text' , 'image' ,'weight' ,   'user_pop')

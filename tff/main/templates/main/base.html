@@ -16,13 +16,8 @@
             </div>
             <div class="novigations">
                 <nav class="header_link">
-                    <ul>
-                        <li><a href="{%url 'registr'%}">Регистрация</a></li>
-                        <li><a href="{%url 'login'%}">Вход</a></li>
-                        <li><a href="{%url 'logout'%}">Выход</a></li>
-                        <li><a href="">Филтр</a></li>
-                        <li><a href="{%url 'create_post'%}">Создать</a></li>
-                    </ul>
+                    {%block links%}
+                    {%endblock%}
                 </nav>
             </div>
         </header>

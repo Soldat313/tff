@@ -7,11 +7,16 @@
     <h3>про себя {{form.text}}</h3>
     
     {{form.image}}
+    {{form.weight}}
     <br>
     <br>
     <br>
     <select name="user_pop" required="" id="id_user_pop">
-        <option value="1">{{user}}</option>      
+      
+        <option value="{{user.id}}">{{user}}</option>
+      
+      
+      
       </select>
     
     <button type="submit">Submit</button>

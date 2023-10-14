@@ -32,8 +32,8 @@ def upload_post(request):
         if form.is_valid():
             form.save()
             post_obj = form.instance
-            return render(request, 'upload_post.html', {post_obj:"post_obj"})
+            return render(request, 'main/upload_post.html', {post_obj:"post_obj"})
     else:
         form = PostForm()
-    return render(request,  'upload_post.html', {'form':form})
+    return render(request,  'main/upload_post.html', {'form':form})
 

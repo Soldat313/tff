@@ -20,6 +20,7 @@ class User(AbstractUser):
 class Post(models.Model):
     text = models.TextField(max_length=2000)
     image = models.ImageField(upload_to='users/%Y/%m/%d/', blank=True)
+    weight = models.FloatField()
     user_pop= models.ForeignKey(User , on_delete=models.CASCADE)
 
     def __str__(self):
